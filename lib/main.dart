@@ -11,9 +11,11 @@ import 'constants/app_constants.dart';
 import 'constants/route_names.dart';
 import 'widgets/navigation/app_route_observer.dart';
 
-void main() => runApp(GakushuuApp());
+void main() => runApp(const GakushuuApp());
 
 class GakushuuApp extends StatelessWidget {
+  const GakushuuApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
